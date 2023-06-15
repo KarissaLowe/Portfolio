@@ -6,10 +6,10 @@
 name: The Data Mouse
 
 # Short bio or description (displayed in the header)
-description: Sharing Data tidbits from time to time
+description: Sharing Data Tidbits from Time to Time
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://static.wikia.nocookie.net/angelinaballerina/images/e/e9/Angelina_ballerina.jpg/revision/latest?cb=20130605034258
+avatar: https://avatars.githubusercontent.com/u/122957122?v=4
 
 #
 # Flags below are optional
@@ -23,10 +23,10 @@ footer-links:
   flickr:
   github: KarissaLowe
   instagram:
-  linkedin: https://www.linkedin.com/in/karissamlowe/
+  linkedin: karissamlowe
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
