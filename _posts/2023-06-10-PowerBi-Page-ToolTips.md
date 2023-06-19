@@ -13,7 +13,7 @@ These are tooltips that show an additional, smaller page when a value is hovered
 ---
 
 ### Example: Using Page Tooltips to show Volunteer Insights
-All Data used to create this Volunteering report is fake and generated using the random functions on google sheets. Feel free to download the spreadsheet [here](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/ExampleData/EventData_PowerBiTooltips.csv) to practice with!
+*All Data used to create this Volunteering report is fake and generated using the random functions on google sheets. Feel free to download the spreadsheet [here](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/ExampleData/EventData_PowerBiTooltips.csv) to practice with!*
 
 In this example, I used a Page Tooltip to display the donation amount category volunteers are part of broken down by which volunteer activity they are involved with. 
 Are there certain volunteer activities that create a stronger connection with the organization’s mission? Why might certain activities attract individuals who already donate?
