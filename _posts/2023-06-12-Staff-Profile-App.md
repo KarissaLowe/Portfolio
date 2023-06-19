@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embracing Inclusivity: Microsoft Power App for Employee Introductions, Pronouns, and Name Pronunciation
+title: Microsoft Power App for Employee Introductions, Pronouns, and Name Pronunciation
 ---
 
 ### Introduction
