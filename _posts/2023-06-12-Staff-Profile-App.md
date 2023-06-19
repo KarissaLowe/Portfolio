@@ -1,56 +1,44 @@
 ---
 layout: post
-title: Embracing Inclusivity: Microsoft Power App for Employee Introductions, Pronouns, and Name Pronunciation
+title: Maximizing Customer Insights with Power BI's Page Tooltips
 ---
 
-### App Introduction
-Even three years after switching to a hybrid work environment, we are still finding innovative ways to foster connections and promote a sense of belonging. 
-After a successful implementation of a Coworker Compliment Power App, my organization's HR requested an app where employees could share more information about themselves. They wanted a place where our employees can build a sense of familiarity, even when working remotely or in different locations. 
+### Introduction
+In the world of data analysis and visualization, tools that offer interactive and immersive experiences are highly valued. Power Bi is one such data visualization tool where reports created through the software offer a multitude of interactive abilities for the report user. 
 
-I realized this task aligned with a separate request I had heard in my company’s Diversity and Equity Subcommittee: A way that staff, who feel comfortable to opt in, can share their pronouns, name phonetics, and a recording of how their name is pronounced.
-
-To meet both of these requests, I built a user-friendly Power App to facilitate the sharing of employee introductions, pronouns, name phonetics, and even recordings of name pronunciations. This Staff Profile App empowers our team members to personalize their profiles and express their individuality within our collaborative workspace. With just a few clicks, colleagues can discover common interests, pronounce names correctly, and better connect with one another on a personal level. Recognizing and honoring individual identities is an essential aspect of fostering a welcoming and supportive work environment. 
-
+One of my favorite interactive capabilities is [Power Bi’s Page Tooltips](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-tooltips?tabs=powerbi-desktop).
+These are tooltips that show an additional, smaller page when a value is hovered over. By incorporating page tooltips into your Power BI reports, you can bring additional layers of information to your visualizations, enabling users to delve deeper into the data and extract valuable insights.
 <br>
 
-![Home Page of Staff Profile App](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Home1.png?raw=true)
-
 ---
 
-### Solution Architecture
+### Example: Using Page Tooltips to show Volunteer Insights
+All Data used to create this Volunteering report is fake and generated using the random functions on google sheets. Feel free to download the spreadsheet [here](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/ExampleData/EventData_PowerBiTooltips.csv) to practice with!
 
-- Power Apps was used to create the Staff Profile Application. I used a Canvas App and started from scratch to allow the most customization.
-- Sharepoint is used to store the data collected from the Profile app in Sharepoint Lists. Any name recordings or profile pictures taken in the app is stored in Sharepoint Document Libraries.
-- Power Automate is used to take the name pronunciation recording from the app and transform it into a saveable file for Sharepoint. There is also an option to take a profile photo within the app. This feature also uses a Power Automate Flow to save the photo to a Sharepoint Document Library.
+In this example, I used a Page Tooltip to display the donation amount category volunteers are part of broken down by which volunteer activity they are involved with. 
+Are there certain volunteer activities that create a stronger connection with the organization’s mission? Why might certain activities attract individuals who already donate?
 
+Here is how the report looks initially:
+
+![ToolTip Report Page Example](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Tooltip_Image1.PNG?raw=true)
+
+
+Using Page Tooltips, the user can hover over the table to see the donation category of volunteers involved in each activity:
+
+![ToolTip Report Page Example User is hovering over a value to see tooltip 1](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Tooltip_Image2.PNG?raw=true)
+![ToolTip Report Page Example User is hovering over a value to see tooltip 2](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Tooltip_Image3.PNG?raw=true)
 <br>
 
-![Staff Profile Solution Architecture](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Microsoft%20Power%20Apps.png?raw=true)
-
-
 ---
 
-### Power App Structure
-The Power App has two main pages in addition to the Home Page:
+### Other Tooltip Ideas
+Here are a few other ideas on how to use Page Tooltips to drive more customer insight:
 
-Edit your Profile: 
-This page allows employees to fill out their profile. Information is collected and stored through a Form control connected to a Sharepoint List. Some example questions are: Preferred Name? Pronouns? What days do you come into the office? No fields are required, so the user can fill out as little or as much as they would like.
-The Microphone control and Audio control are also used to allow the employee to record their name and play back the recording. A Power Automate flow is used to save the file from the Microphone control into the Sharepoint Document library.
- 
-![Edit Page of Staff Profile](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/Edit1.png?raw=true)
+1. Customer Profiling:
+   - By hovering over a customer data point, you can display a tooltip that includes details such as demographics, purchase history, customer preferences, and other relevant attributes.
+2. Donation Patterns:
+   - By incorporating tooltips into your donation visualizations, you can display details about each donation, including the amount, date, campaign, and any associated notes. This allows you to identify patterns and trends in donation behavior, such as peak donation periods or preferred campaigns. Or look more closely into outliers.
+3. Geographic Insights:
+   - If your data includes geographic information, page tooltips can be utilized to provide localized insights. For example, you can display tooltips that show regional sales performance when the user hovers over a specific area.
 
-View Profiles: 
-This page uses Power App’s Gallery and Form Display function to show the information employees provide. The gallery of names is searchable by department or employee name using the search function. To view a profile, you can click on the name of the employee.
-
-![View page](https://github.com/KarissaLowe/KarissaLowe.github.io/blob/main/Images/View1.png?raw=true)
-
-In addition to these main two pages, I added a link to my company’s organization chart and a page to collect user feedback. There is also a Settings page only accessible by HR to allow removal of profiles if inappropriate content is added.
-
----
-
-### Power Automate Flows
-The trickiest part of this app was saving the Name Pronunciation recording into Sharepoint. Power Apps has a handy recording feature, but allowing the user to save their recording takes a bit of work.
-
-We need to first convert the recording to a binary format and send it to Power Automate when the profile is submitted. The Power Automate flow will then convert and save this recording to the Sharepoint Document Library that backs the app. To accomplish this, I followed this amazing guide written by [Rajkiran Swain](https://www.enjoysharepoint.com/saving-microphone-audio-recorded-in-powerapps-to-sharepoint-online/).
-
-And that’s it! I hope this can help you innovatively use Power Apps to create a supportive work environment for all.
+By implementing effective page tooltips, you can empower your audience to interact with your data in a more meaningful way, giving the user more ownership in uncovering insights and using the data.
