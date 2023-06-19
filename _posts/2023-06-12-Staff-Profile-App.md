@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximizing Customer Insights with Power BI's Page Tooltips
+title: Embracing Inclusivity: Microsoft Power App for Employee Introductions, Pronouns, and Name Pronunciation
 ---
 
 ### Introduction
