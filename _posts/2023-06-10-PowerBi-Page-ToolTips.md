@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximizing Customer Insights with Power BI's Page Tooltips
+title: Power BI & Visualizations - Maximizing Insights with Full Page Tooltips
 ---
 
 ### Introduction
