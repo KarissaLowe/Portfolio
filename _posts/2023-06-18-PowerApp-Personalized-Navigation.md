@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User-Specific Navigation Menus in Power Apps
+title: Power Apps - User-Specific Navigation Menus
 ---
 
 ### Introduction
