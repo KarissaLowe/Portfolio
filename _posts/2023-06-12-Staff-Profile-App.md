@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Power Apps - Microsoft Power App for Employee Introductions and Name Pronunciations
+title: Power Apps - App for Employee Introductions and Name Pronunciations
 ---
 
 ### App Introduction
