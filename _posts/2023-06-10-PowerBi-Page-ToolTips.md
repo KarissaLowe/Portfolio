@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Power BI & Visualizations - Maximizing Insights with Full Page Tooltips
+title: Power BI - Maximizing Insights with Full Page Tooltips
 ---
 
 ### Introduction
